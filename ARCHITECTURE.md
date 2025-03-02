@@ -1,10 +1,10 @@
-# DataCuration Architecture
+# Data-curation-pipeline Architecture
 
 This document describes the architecture, design decisions, and tradeoffs in the DataCuration pipeline system.
 
 ## System Overview
 
-DataCuration is designed as a modular, extensible pipeline for processing and curating datasets, particularly for training and evaluating large language models. The architecture follows clean design principles with a focus on separation of concerns, extensibility, and configurability.
+Data-curation-pipeline is designed as a modular, extensible pipeline for processing and curating datasets, particularly for training and evaluating large language models. The architecture follows clean design principles with a focus on separation of concerns, extensibility, and configurability.
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
