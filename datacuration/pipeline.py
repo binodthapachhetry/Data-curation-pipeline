@@ -130,6 +130,9 @@ class Pipeline:
         # Apply transformers
         for i, transformer in enumerate(self.transformers):
             data = transformer.transform(data)
+            # Store transformer stats if available
+            if hasattr(transformer, 'get_stats'):
+                self.stats[f"transformer_{i}"] = transformer.get_stats()
         
         # Check quality
         quality_metrics = {}
@@ -138,6 +141,9 @@ class Pipeline:
             quality_metrics[f"checker_{i}"] = metrics
         
         self.stats["quality"] = quality_metrics
+        
+        # Store the final data for evaluation purposes
+        self.final_data = data
         
         # Write to sinks
         for sink in self.sinks:

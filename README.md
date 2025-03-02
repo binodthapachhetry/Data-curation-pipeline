@@ -17,6 +17,11 @@ DataCuration provides a modular framework for processing, cleaning, filtering, a
   - Duplicate detection based on semantic similarity
   - Diversity sampling through clustering
   - Content ranking by similarity to reference examples
+- Evaluation framework:
+  - Compare different pipeline configurations
+  - Measure data quality and diversity
+  - Benchmark pipeline performance
+  - Identify optimal configurations for specific use cases
 
 ## Getting Started
 
