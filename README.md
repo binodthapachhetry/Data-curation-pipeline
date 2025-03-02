@@ -13,6 +13,10 @@ DataCuration provides a modular framework for processing, cleaning, filtering, a
 - Configurable filtering and transformation rules
 - Quality metrics and validation
 - Scalable processing for large datasets
+- Semantic operations using embeddings:
+  - Duplicate detection based on semantic similarity
+  - Diversity sampling through clustering
+  - Content ranking by similarity to reference examples
 
 ## Getting Started
 
